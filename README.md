@@ -48,6 +48,7 @@ brew install unrar
 ```sh
   echo 'alias golded="sudo ~/fidoosx/geosx | iconv -f koi8-r"' >> ~/.bash_profile
   echo 'alias fido="sudo ~/fidoosx/0.spsrtttl && sudo ~/fidoosx/send-recv"' >> ~/.bash_profile
+  echo 'alias gldd="fido && golded"' >> ~/.bash_profile
 ```
 После чего перезапускаем iTerm2.
 
@@ -59,6 +60,10 @@ golded
 отправить/забрать почту
 ```sh
 fido
+```
+все два пункта выше вместе
+```sh
+gldd
 ```
 
 
