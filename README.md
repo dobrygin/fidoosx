@@ -7,7 +7,20 @@ Installation guide for GoldEd on osx
 ```
 
 ### 2. Ставим [iTerm2](https://www.iterm2.com/downloads.html)
-Делаем все через него. Странно, но только в нем у меня адекватно заработала кириллица в GoldEd.
+#### 2.1 Настариваем кодировку
+  iTerm2 > Preferences > Profiles
+  
+  ![Preferences](https://sun1-15.userapi.com/c831208/v831208168/1abd71/L6Ohr9UqN9c.jpg)
+  
+  Жмем на плюсик, создаем новый профиль, называем его как хотим.
+  
+  ![New profile](https://pp.userapi.com/c848528/v848528168/8ba38/3KQry9Y9xt0.jpg)
+  
+  Там же, жмем на Other Actions... > Set as Default
+  
+  Открываем вкладку Terminal, ищем Character Encoding: ставим Cyrillic (KOI8-R)
+  
+  ![Character Encoding](https://pp.userapi.com/c848528/v848528919/8b33f/DYgnw4A5xXg.jpg)
 
 ### 3. Делаем клон репозитория
 ```sh
@@ -46,7 +59,7 @@ brew install unrar
 
 ### 5. Делаем Alias на GoldEd и отправку почты
 ```sh
-  echo 'alias golded="sudo ~/fidoosx/geosx | iconv -f koi8-r"' >> ~/.bash_profile
+  echo 'alias golded="sudo ~/fidoosx/geosx"' >> ~/.bash_profile
   echo 'alias fido="sudo ~/fidoosx/0.spsrtttl && sudo ~/fidoosx/send-recv"' >> ~/.bash_profile
   echo 'alias gldd="fido && golded"' >> ~/.bash_profile
 ```
