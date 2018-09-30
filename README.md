@@ -44,15 +44,21 @@ sudo sh ./setup.sh
 brew install unrar
 ```
 
-### 5. Делаем Alias на GoldEd
+### 5. Делаем Alias на GoldEd и отправку почты
 ```sh
   echo 'alias golded="sudo ~/fidoosx/geosx | iconv -f koi8-r"' >> ~/.bash_profile
+  echo 'alias fido="sudo ~/fidoosx/0.spsrtttl && sudo ~/fidoosx/send-recv"' >> ~/.bash_profile
 ```
 После чего перезапускаем iTerm2.
 
 ### 6. Запускаем GoldEd через iTerm2
-
+запустить редактор GoldEd
 ```sh
 golded
 ```
+отправить/забрать почту
+```sh
+fido
+```
+
 
